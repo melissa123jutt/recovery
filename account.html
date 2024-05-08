@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Acount</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <section id="account">
+        <h2>Account</h2>
+        <p>Current Balance: $1000</p>
+        <p>Recovered Balance: $500</p>
+        <p>Remaining Balance: $500</p>
+        <h3>Your Card Information</h3>
+        <p>Card Number: XXXX-XXXX-XXXX-1234</p>
+        <p>Expiration Date: 12/25</p>
+        <p>CVV: XXX</p>
+    </section>
+    
+    <section id="deposit">
+        <h2>Deposit</h2>
+        <p>To deposit funds, please provide your card information and the amount you wish to deposit:</p>
+        <form action="#" method="post">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+            
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="text" id="expirationDate" name="expirationDate" required><br><br>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br><br>
+            
+            <label for="depositAmount">Deposit Amount ($):</label>
+            <input type="number" id="depositAmount" name="depositAmount" required min="1"><br><br>
+            
+            <button type="submit">Deposit</button>
+        </form>
+    </section>
+    
+    <section id="withdrawal">
+        <h2>Withdrawal</h2>
+        <p>To withdraw funds, click the button below:</p>
+        <button id="withdrawButton">Withdraw</button>
+    </section>
+    
+</body>
+</html>
